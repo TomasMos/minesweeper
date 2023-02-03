@@ -5,26 +5,26 @@
 
 ### Gamplay
 
-#### This is the home page, where a human can choose to play as X or O, if one chooses O they play second, X goes first.
+#### This is the home page, detailing how to play the game.
 
-![Home Page](https://raw.githubusercontent.com/TomasMos/tictactoe/main/Home.PNG)
+![Home Page](https://raw.githubusercontent.com/TomasMos/minesweeper/main/screenshots/home.PNG)
 
-#### I chose to play as X and the AI chose the top left corner cell as O.
+#### As with normal minesweeper, the board begins blank and a player needs to make an initial guess, here the AI has guessed and has revealed a cell with a value of 0. This will update the AI's knowledge base with the information of this cell's value, and that the neighbouring cells are 'safe'.
 
-![Play as X](https://raw.githubusercontent.com/TomasMos/tictactoe/main/X_1.PNG)
+![Play as X](https://raw.githubusercontent.com/TomasMos/minesweeper/main/screenshots/initial_guess.PNG)
 
-#### After I played a series of suboptimal moves, the AI has won.
+#### Sometimes, the initial guess will hit a mine, and the game will be over.
 
-![Make suboptimal moves, the AI will win](https://raw.githubusercontent.com/TomasMos/tictactoe/main/X_win.PNG)
+![Make suboptimal moves, the AI will win](https://raw.githubusercontent.com/TomasMos/minesweeper/main/screenshots/bad_guess.PNG)
 
-#### This is the AI playing as X.
+#### Here, it took a few guesses for the AI to find a cell with a value of 0, only now will the AI have the knowledge of where to safely move. It operates exactly the same as a human player would
 
-![Play as O](https://raw.githubusercontent.com/TomasMos/tictactoe/main/O_1.PNG)
+![Play as O](https://raw.githubusercontent.com/TomasMos/minesweeper/main/screenshots/few_guesses.PNG)
 
-#### The AI has cornered me with a catch-22, where I cannot prevent losing as there are two winning moves for the AI.
+#### The AI, capitalized on the known 'safe' cells by revealing those cells closest to the initial 0-valued cell. But, highlighted in yellow is an example of inference made by the AI. This cell with the value 2 is the most recent move by the AI, and was not a guess (I know because in the terminal it prints whether the AI is guessing or making a safe move). This move is based on two separate logical statements, which have been combined to create a third logical statement about the highlighted cell, that it is 'safe'. This is most definitely not a human move.
 
-![The AI has cornered me with a catch-22](https://raw.githubusercontent.com/TomasMos/tictactoe/main/O_2.PNG)
+![The AI has cornered me with a catch-22](https://raw.githubusercontent.com/TomasMos/minesweeper/main/screenshots/AI%20move.PNG)
 
-#### The AI wins again.
+#### Below is an example of the AI winning the game.
 
-![The AI has won](https://raw.githubusercontent.com/TomasMos/tictactoe/main/O_win.PNG)
+![The AI has won](https://raw.githubusercontent.com/TomasMos/minesweeper/main/screenshots/won.PNG)
