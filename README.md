@@ -1,6 +1,6 @@
 # minesweeper
 
-## This game was developed as part of my CS50AI course from Harvard. On the frontend, pygame is used to create the graphics and GUI. The backend enables a human to make moves and calculates the optimum move for an AI to play. The AI algorithm employed is based on a set of logical statements about the board. For example, if a cell is known to have the value of 0 (indicating that there are no mines immediately next to it) then the knownledge base of the AI is updated with information to say that all the neighbouring cells are 'safe'. To add to this, the logical statements can be combined, to infer knowledge about cells outside of the immediately obvious neighbours. An example is shown below. 
+## The AI algorithm employed is based on a set of logical statements about the board. For example, if a cell is known to have the value of 0 (indicating that there are no mines immediately next to it) then the knownledge base of the AI is updated with information to say that all the neighbouring cells are 'safe'. To add to this, the logical statements can be combined, to infer knowledge about cells outside of the immediately obvious neighbours. An example is shown below. On the frontend, pygame is used to create the graphics and GUI. The backend enables a human to make moves and calculates the optimum move for an AI to play. 
 
 
 ### Gamplay
